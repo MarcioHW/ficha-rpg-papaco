@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Formulario de RPG</title>
+</head>
+<body>
+    <div class="formulario">
+    <h1>Comece Sua Aventura<span> (beta)</span></h1>
+
+    <form method="post" action="index.html" enctype="multipart/form-data">
+
+        
+        <h2>*Ficha do Personagem*</h2>
+        
+        <label for="nome">Nome:</label>
+        <input type="text" name="nome" id="nome" placeholder="Nome do seu Personagem" required>
+        
+        <br>
+        <br>
+
+            
+        <label for="altura">Altura:</label>
+        <input type="number" name="altura" id="altura" placeholder="sua altura Ex: 1,80" maxlength="4" minlength="4" step="0.01" required>
+        
+        <br>
+        <br>
+
+        <label for="idade">Idade:</label>
+        <input type="number" name="altura" id="idade" placeholder="Idade do Personagem" required>
+
+        <br>
+        <br>
+        
+        <label>Sexo:</label>
+        <label for="masculino">Masculino</label>
+        <input type="radio" id="masculino" name="sexo" checked>
+
+        <label for="feminino">Feminino</label>
+        <input type="radio" id="feminino" name="sexo">
+
+        <br>
+        <br>
+
+        <label>Alinhamento:</label>
+        <label for="bem">Bem</label>
+        <input type="radio" id="bem" name="alinhamento">
+
+        <label for="mal">Mal</label>
+        <input type="radio" id="mal" name="alinhamento">
+
+        <label for="neutro">Neutro</label>
+        <input type="radio" id="neutro" name="alinhamento" checked>
+
+
+        <br>
+        <br>
+
+        <label for="Personalidade">Personalidade do Personagem:</label><br>
+        <textarea name="personalidade" id="Personalidade" cols="30" rows="3" placeholder="Exemplo: extrovertido, inteligente, enérgico, humorado, sensível..(campo opcional)"></textarea>
+
+        <br>
+
+
+        <label for="Ideais">Ideais do Personagem:</label><br>
+        <textarea name="Ideais" id="Ideais" cols="30" rows="3" placeholder="Exemplo: Bom, gosta de ajudar, odeia injustiça, medo da solidão..(campo opcional)"></textarea>
+
+        <br>
+
+        <label for="história-do-personagem">História do Personagem:</label><br>
+        <textarea name="história" id="história-do-personagem" cols="30" rows="3" placeholder="Exemplo: Há muito tempo atrás, nasci e cresci em uma floresta de elfos..(campo opcional)"></textarea>
+
+        <br>
+
+        <label for="caracteristica-do-personagem">Características do Personagem:</label><br>
+        <textarea name="caracteristicas" id="caracteristica-do-personagem" cols="30" rows="3" placeholder="Exemplo: cabelo branco, cicatrizes, olho esverdiado..(campo opcional)"></textarea>
+
+        <br>
+
+        <label for="imagem-do-personagem">Imagem do Personagem (campo opcional):</label><br>
+        <input type="file" id="imagem-do-personagem">
+
+        <br>
+        <br>
+
+        <label for="raça">Raça do Personagem:</label><br>
+        <input type="text" name="raça" id="raça" value="" placeholder="Exemplo: Humano, Elfo, Goblin.." required>
+
+        <br>
+        <br>
+
+        <label for="classe">Classe do Personagem:</label><br>
+        <input type="text" name="classe" id="classe" value="" placeholder="Exemplo: Guerreiro, Mago.." required>
+
+        <br>
+        <br>
+
+        <label>Atributos do Personagem:</label><br>
+        <label for="des">Destreza</label><br>
+        <input type="number" name="des" id="des" required>
+        <br>
+        
+        <label for="con">Constituição</label><br>
+        <input type="number" name="con" id="con" required>
+        <br>
+
+        <label for="per">Percepção</label><br>
+        <input type="number" name="per" id="per" required>
+        <br>
+
+        <label for="sab">Sabedoria</label><br>
+        <input type="number" name="sab" id="sab" required>
+        <br>
+
+        <label for="int">Inteligência</label><br>
+        <input type="number" name="int" id="int" required>
+        <br>
+
+        <label for="car">Carisma</label><br>
+        <input type="number" name="car" id="car" required>
+        <br>
+        
+        <label for="inventario">inventario:</label><br>
+        <textarea name="inventario" id="inventario" cols="10" rows="5"></textarea>
+
+        <br>
+        <br>
+
+    <input type="submit" value="enviar">
+
+    </form>
+    </div>
+</body>
+</html>
