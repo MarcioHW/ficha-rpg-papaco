@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'volcanic dungeon';
-    src: url(./ficharpg/fonts/Volcanic\ Dungeon.ttf);
+    src: url('./ficharpg/fonts/Volcanic Dungeon.ttf');
 }
 
 .formulario {
