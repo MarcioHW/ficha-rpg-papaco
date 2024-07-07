@@ -7,12 +7,11 @@
     <title>Formulario de RPG</title>
 </head>
 <body>
-    <div class="formulario">
+    <section class="formulario">
     <h1>Comece Sua Aventura<span> (beta)</span></h1>
 
     <form method="post" action="index.html" enctype="multipart/form-data">
 
-        
         <h2>*Ficha do Personagem*</h2>
         
         <label for="nome">Nome:</label>
@@ -20,16 +19,12 @@
         
         <br>
         <br>
-
-            
-        <label for="altura">Altura:</label>
-        <input type="number" name="altura" id="altura" placeholder="sua altura Ex: 1,80" maxlength="4" minlength="4" step="0.01" required>
-        
-        <br>
-        <br>
-
+  
         <label for="idade">Idade:</label>
-        <input type="number" name="altura" id="idade" placeholder="Idade do Personagem" required>
+        <input type="number" name="altura" id="idade" min="1" max="9999" required>
+
+        <label for="altura">Altura:</label>
+        <input type="number" name="altura" id="altura" value="1" max="30" min="0.20" step="0.01" required>
 
         <br>
         <br>
@@ -54,7 +49,6 @@
         <label for="neutro">Neutro</label>
         <input type="radio" id="neutro" name="alinhamento" checked>
 
-
         <br>
         <br>
 
@@ -62,7 +56,6 @@
         <textarea name="personalidade" id="Personalidade" cols="30" rows="3" placeholder="Exemplo: extrovertido, inteligente, enérgico, humorado, sensível..(campo opcional)"></textarea>
 
         <br>
-
 
         <label for="Ideais">Ideais do Personagem:</label><br>
         <textarea name="Ideais" id="Ideais" cols="30" rows="3" placeholder="Exemplo: Bom, gosta de ajudar, odeia injustiça, medo da solidão..(campo opcional)"></textarea>
@@ -97,40 +90,50 @@
         <br>
         <br>
 
-        <label>Atributos do Personagem:</label><br>
-        <label for="des">Destreza</label><br>
-        <input type="number" name="des" id="des" required>
+        <label>Atributos do Personagem:</label>
+        
+        <br>
+        <br>
+
+        <label for="des">Destreza</label>
+        <input type="number" name="des" id="des" max="99" min="1" required>
+        
+        <label for="fr">Força</label>
+        <input type="number" name="fr" id="fr" max="99" min="1" required>
+    
+        <label for="con">Constituição</label>
+        <input type="number" name="con" id="con" max="99" min="1" required>
+        
+        <label for="agi">Agilidade</label>
+        <input type="number" name="agi" id="agi" max="99" min="1" required>
+
+        <br>
+        <br>
         <br>
         
-        <label for="con">Constituição</label><br>
-        <input type="number" name="con" id="con" required>
-        <br>
+        <label for="will">Força de Vontade</label>
+        <input type="number" name="will" id="will" max="99" min="1" required>
+        
+        <label for="int">Inteligencia</label>
+        <input type="number" name="int" id="int" max="99" min="1" required>
 
-        <label for="per">Percepção</label><br>
-        <input type="number" name="per" id="per" required>
-        <br>
+        <label for="per">Percepção</label>
+        <input type="number" name="per" id="per" max="99" min="1" required>
 
-        <label for="sab">Sabedoria</label><br>
-        <input type="number" name="sab" id="sab" required>
-        <br>
+        <label for="car">Carisma</label>
+        <input type="number" name="car" id="car" max="99" min="1" required>
 
-        <label for="int">Inteligência</label><br>
-        <input type="number" name="int" id="int" required>
         <br>
-
-        <label for="car">Carisma</label><br>
-        <input type="number" name="car" id="car" required>
         <br>
         
         <label for="inventario">inventario:</label><br>
-        <textarea name="inventario" id="inventario" cols="10" rows="5"></textarea>
+        <textarea name="inventario" id="inventario" cols="20" rows="4"></textarea>
 
         <br>
         <br>
 
-    <input type="submit" value="enviar">
-
+        <input type="submit" value="enviar">
     </form>
-    </div>
+    </section>
 </body>
 </html>
