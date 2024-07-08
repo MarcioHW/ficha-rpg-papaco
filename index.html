@@ -7,11 +7,11 @@
     <title>Formulario de RPG</title>
 </head>
 <body>
-    <section class="formulario">
+    
     <h1>Comece Sua Aventura<span> (beta)</span></h1>
 
     <form method="post" action="index.html" enctype="multipart/form-data">
-
+<section class="formulario">
         <h2>*Ficha do Personagem*</h2>
         
         <label for="nome">Nome:</label>
@@ -71,6 +71,7 @@
         <textarea name="caracteristicas" id="caracteristica-do-personagem" cols="30" rows="3" placeholder="Exemplo: cabelo branco, cicatrizes, olho esverdiado..(campo opcional)"></textarea>
 
         <br>
+        <br>
 
         <label for="imagem-do-personagem">Imagem do Personagem (campo opcional):</label><br>
         <input type="file" id="imagem-do-personagem">
@@ -78,73 +79,77 @@
         <br>
         <br>
 
-        <div class="atributos-caixa">
-
-        <label for="raça">Raça do Personagem:</label><br>
+    <div class="raça-alinhamento">
+        <label for="raça">Raça:</label>
         <input type="text" name="raça" id="raça" value="" placeholder="Exemplo: Humano, Elfo, Goblin.." required>
+    </div>
 
         <br>
-        <br>
 
-        <label for="classe">Classe do Personagem:</label><br>
+    <div class="classe-alinhamento">
+        <label for="classe">Classe:</label>
         <input type="text" name="classe" id="classe" value="" placeholder="Exemplo: Guerreiro, Mago.." required>
+    </div>
 
         <br>
-        <br>
 
+    <div class="titulo-atributos-do-personagem">   
         <label>Atributos do Personagem:</label>
-        
-        <br>
-        <br>
+    </div> 
 
-        <input type="number" name="des" id="des" max="99" min="1" required>
+        <br>
+           
+    <div class="des-e-will">
         <label for="des">Destreza</label>
-        
+        <input type="number" name="des" id="des" max="99" min="1" required>
+
         <input type="number" name="will" id="will" max="99" min="1" required>
-        <label for="will">Força de Vontade</label>
+        <label for="will">Força de Vontade</label> 
+    </div>
 
         <br>
-        <br>
 
-        <input type="number" name="fr" id="fr" max="99" min="1" required>
+    <div class="força-e-inteligencia">    
         <label for="fr">Força</label>
+        <input type="number" name="fr" id="fr" max="99" min="1" required>
 
-        
         <input type="number" name="int" id="int" max="99" min="1" required>
         <label for="int">Inteligencia</label>
+    </div>
 
         <br>
-        <br>
-    
-        
-        <input type="number" name="con" id="con" max="99" min="1" required>
+
+    <div class="Constituição-e-percepção">
         <label for="con">Constituição</label>
-
+        <input type="number" name="con" id="con" max="99" min="1" required>
         
         <input type="number" name="per" id="per" max="99" min="1" required>
         <label for="per">Percepção</label>
+    </div>
 
         <br>
-        <br>
-        
-        <input type="number" name="agi" id="agi" max="99" min="1" required>
+
+    <div class="agilidade-e-carisma">   
         <label for="agi">Agilidade</label>
-
+        <input type="number" name="agi" id="agi" max="99" min="1" required>
         
         <input type="number" name="car" id="car" max="99" min="1" required>
         <label for="car">Carisma</label>
     </div>
+
         <br>
         <br>
-        
+    
+    <div class="inventario-alinhamento">
         <label for="inventario">inventario:</label><br>
         <textarea name="inventario" id="inventario" cols="20" rows="4"></textarea>
+    </div>
 
         <br>
-        <br>
 
-        <input type="submit" value="enviar">
+        <input type="submit" value="enviar" id="enviar">
+    </section> 
     </form>
-    </section>
+    
 </body>
 </html>

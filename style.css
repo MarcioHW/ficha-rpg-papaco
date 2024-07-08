@@ -27,9 +27,54 @@ h1 {
 h2 {
     color: rgb(48, 207, 186);
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
 }
 
 label {
     color: rgb(210, 235, 240);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
+.raça-alinhamento {
+    margin-right: 55px;
+}
+
+.classe-alinhamento {
+    margin-right: 65px;
+}
+
+.titulo-atributos-do-personagem {
+    margin-right: 50px;
+    font-size: 20px;
+}
+
+.des-e-will {
+    display: flex;
+    justify-content: center;
+    margin-left: 15px;
+}
+
+.força-e-inteligencia {
+    display: flex;
+    justify-content: center;
+}
+
+.Constituição-e-percepção {
+    display: flex;
+    justify-content: center;
+    margin-right: 55px;
+}
+
+.agilidade-e-carisma {
+    display: flex;
+    justify-content: center;
+    margin-right: 49px;
+}
+
+.inventario-alinhamento {
+    margin-right: 45px;
+}
+
+#enviar {
+    margin-right: 45px;
+}
